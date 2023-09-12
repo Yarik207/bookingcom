@@ -19,7 +19,7 @@ namespace bookingcom
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+             
         }
 
         private void LoginPanel_Paint(object sender, PaintEventArgs e)
