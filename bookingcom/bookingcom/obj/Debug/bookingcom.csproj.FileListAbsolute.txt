@@ -1,0 +1,11 @@
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\bin\Debug\bookingcom.exe.config
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\bin\Debug\bookingcom.exe
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\bin\Debug\bookingcom.pdb
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.csproj.AssemblyReference.cache
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.Main.resources
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.Properties.Resources.resources
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.csproj.GenerateResource.cache
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.csproj.CoreCompileInputs.cache
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.exe
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.pdb
+C:\Users\Ярик\source\repos\bookingcom\bookingcom\obj\Debug\bookingcom.HotelForm.resources
