@@ -19,7 +19,7 @@ namespace bookingcom
 
         private void Main_Load(object sender, EventArgs e)
         {
-             
+
         }
 
         private void LoginPanel_Paint(object sender, PaintEventArgs e)
@@ -45,6 +45,37 @@ namespace bookingcom
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CloseFilButton_Click(object sender, EventArgs e)
+        {
+            if(FiltrPanel.Height < 130)
+            {
+                FiltrPanel.Height = 130;
+            }
+            else
+            {
+                FiltrPanel.Height = CloseFilButton.Size.Height;
+            }
+        }
+
+        private void PassTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HotelClick(object sender, EventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            HotelForm hf = new HotelForm(pb.Tag.ToString());
+            hf.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            HotelForm hf = new HotelForm(pb.Tag.ToString());
+            hf.ShowDialog();
         }
     }
 }
