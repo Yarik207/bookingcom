@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelForm));
             this.HotelPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.HotelLabel = new System.Windows.Forms.Label();
             this.HotelImagePB = new System.Windows.Forms.PictureBox();
@@ -42,7 +41,6 @@
             this.HotelName2 = new System.Windows.Forms.Label();
             this.HotelNameLB = new System.Windows.Forms.Label();
             this.HotelPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelImagePB)).BeginInit();
             this.InfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -53,7 +51,6 @@
             // HotelPanel
             // 
             this.HotelPanel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.HotelPanel.Controls.Add(this.pictureBox1);
             this.HotelPanel.Controls.Add(this.textBox1);
             this.HotelPanel.Controls.Add(this.HotelLabel);
             this.HotelPanel.Controls.Add(this.HotelImagePB);
@@ -63,16 +60,6 @@
             this.HotelPanel.Name = "HotelPanel";
             this.HotelPanel.Size = new System.Drawing.Size(1000, 225);
             this.HotelPanel.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(342, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
@@ -125,31 +112,35 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(555, 131);
+            this.pictureBox4.Location = new System.Drawing.Point(553, 131);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(231, 166);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "Номер люкс";
+            this.pictureBox4.Click += new System.EventHandler(this.RoomClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(549, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.Size = new System.Drawing.Size(110, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "номер люкс";
+            this.label1.Text = "Номер люкс";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(276, 131);
+            this.pictureBox2.Location = new System.Drawing.Point(274, 131);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(231, 166);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "Номер двухместный";
+            this.pictureBox2.Click += new System.EventHandler(this.RoomClick);
             // 
             // pictureBox3
             // 
@@ -160,15 +151,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "Номер одноместный";
+            this.pictureBox3.Click += new System.EventHandler(this.RoomClick);
             // 
             // HotelName2
             // 
             this.HotelName2.AutoSize = true;
             this.HotelName2.Location = new System.Drawing.Point(270, 103);
             this.HotelName2.Name = "HotelName2";
-            this.HotelName2.Size = new System.Drawing.Size(177, 20);
+            this.HotelName2.Size = new System.Drawing.Size(180, 20);
             this.HotelName2.TabIndex = 6;
-            this.HotelName2.Text = "номер двухместный";
+            this.HotelName2.Text = "Номер двухместный";
             // 
             // HotelNameLB
             // 
@@ -193,7 +186,6 @@
             this.Load += new System.EventHandler(this.HotelForm_Load);
             this.HotelPanel.ResumeLayout(false);
             this.HotelPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelImagePB)).EndInit();
             this.InfoPanel.ResumeLayout(false);
             this.InfoPanel.PerformLayout();
@@ -211,7 +203,6 @@
         private System.Windows.Forms.Label HotelLabel;
         private System.Windows.Forms.PictureBox HotelImagePB;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;

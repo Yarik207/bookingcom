@@ -67,23 +67,17 @@ namespace bookingcom
         private void HotelClick(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            HotelForm hf = new HotelForm(pb.Tag.ToString());
-            hf.ShowDialog();
+            HotelForm hotelform = new HotelForm(pb.Tag.ToString(), 5);
+            hotelform.ShowDialog();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            PictureBox pb = (PictureBox)sender;
-            HotelForm hf = new HotelForm(pb.Tag.ToString());
-            hf.ShowDialog();
-        }
-
+       
         private void HotelName_Click(object sender, EventArgs e)
         {
             Label lb = (Label)sender;
             string[] text = lb.Text.Split(new char[] { '"' });
-            HotelForm hf = new HotelForm(text[1], 3);
-            hf.ShowDialog();
+            HotelForm hotelform = new HotelForm(text[1], 5);
+            hotelform.ShowDialog();
         }
     }
 }
