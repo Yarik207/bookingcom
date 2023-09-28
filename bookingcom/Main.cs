@@ -67,7 +67,7 @@ namespace bookingcom
         private void HotelClick(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            HotelForm hotelform = new HotelForm(pb.Tag.ToString());
+            HotelForm hotelform = new HotelForm(pb.Tag.ToString(), 5);
             hotelform.ShowDialog();
         }
 

@@ -15,8 +15,8 @@ namespace bookingcom
         public RoomForm(string hotelname, string RoomName)
         {
             InitializeComponent();
-            Text = hotelname + ":" + RoomName;
-            RoomLabel.Text = hotelname + ":" + RoomName;
+            Text ="Гостиница " + hotelname + ": " + RoomName;
+            RoomLabel.Text = "Гостиница " + hotelname + ": " + RoomName;
 
 
             RoomPB.Load("../../pictures/" + RoomName + ".jpg");

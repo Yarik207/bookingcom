@@ -12,11 +12,12 @@ namespace bookingcom
 {
     public partial class HotelForm : Form
     {
-        
+        string _hotelname;
 
         public HotelForm(string hotelname, int RatingHotel)
         {
             InitializeComponent();
+            _hotelname = hotelname;
             HotelLabel.Text = "Гостиница \"" + hotelname + "\"";
             Text = hotelname;
             Text = "Гостиница \"" + hotelname + "\"";
@@ -27,7 +28,7 @@ namespace bookingcom
             {
                 PictureBox box = new PictureBox();
                 box.Load("../../pictures/Star.png");
-                box.Location = new Point(x, 70);
+                box.Location = new Point(x, 40);
                 box.Size = new Size(50, 50);
                 box.SizeMode = PictureBoxSizeMode.Zoom;
                 HotelPanel.Controls.Add(box);
@@ -42,7 +43,7 @@ namespace bookingcom
         private void RoomClick(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
-            RoomForm rf = new RoomForm(pb.Tag.ToString());
+            RoomForm rf = new RoomForm(_hotelname, pb.Tag.ToString());
             rf.ShowDialog();
         }
 

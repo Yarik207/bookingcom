@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelForm));
             this.HotelPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.HotelLabel = new System.Windows.Forms.Label();
             this.HotelImagePB = new System.Windows.Forms.PictureBox();
@@ -42,7 +41,6 @@
             this.HotelName2 = new System.Windows.Forms.Label();
             this.HotelNameLB = new System.Windows.Forms.Label();
             this.HotelPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelImagePB)).BeginInit();
             this.InfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -53,7 +51,6 @@
             // HotelPanel
             // 
             this.HotelPanel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.HotelPanel.Controls.Add(this.pictureBox1);
             this.HotelPanel.Controls.Add(this.textBox1);
             this.HotelPanel.Controls.Add(this.HotelLabel);
             this.HotelPanel.Controls.Add(this.HotelImagePB);
@@ -63,16 +60,6 @@
             this.HotelPanel.Name = "HotelPanel";
             this.HotelPanel.Size = new System.Drawing.Size(1000, 225);
             this.HotelPanel.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(342, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
@@ -199,7 +186,6 @@
             this.Load += new System.EventHandler(this.HotelForm_Load);
             this.HotelPanel.ResumeLayout(false);
             this.HotelPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelImagePB)).EndInit();
             this.InfoPanel.ResumeLayout(false);
             this.InfoPanel.PerformLayout();
@@ -217,7 +203,6 @@
         private System.Windows.Forms.Label HotelLabel;
         private System.Windows.Forms.PictureBox HotelImagePB;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
