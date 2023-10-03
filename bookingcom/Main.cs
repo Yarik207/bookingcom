@@ -2,19 +2,42 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace bookingcom
 {
     public partial class Main : Form
     {
+
+        const string Connection_String =
+        "SslMode=none;Server=localhost;Database=bookingcom;port=3306;Uid=root;charset=utf8";
         public Main()
         {
             InitializeComponent();
+
+            MySqlConnection conn = new MySqlConnection(Connection_String);
+            conn.Open();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT id, name FROM cityes", conn);
+
+            DbDataReader reader = cmd.ExecuteReader();  
+
+            while (reader.Read()) 
+            {
+                string id = reader.GetValue(0).ToString();
+                string name = reader.GetValue(1).ToString();
+            }
+            reader.Close();
+
+            conn.Close();
         }
 
         private void Main_Load(object sender, EventArgs e)
