@@ -13,17 +13,3 @@ C:\Users\root\source\repos\Bookingcom\Bookingcom\obj\Debug\Bookingcom.HotelForm.
 C:\Users\root\source\repos\Bookingcom\Bookingcom\obj\Debug\Bookingcom.RoomForm.resources
 C:\Users\root\source\repos\Bookingcom\Bookingcom\bin\Debug\MySql.Data.dll
 C:\Users\root\source\repos\Bookingcom\Bookingcom\obj\Debug\Bookingcom.csproj.CopyComplete
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\bin\Debug\Bookingcom.exe.config
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\bin\Debug\Bookingcom.exe
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\bin\Debug\Bookingcom.pdb
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\bin\Debug\MySql.Data.dll
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.csproj.AssemblyReference.cache
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.HotelForm.resources
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.MainForm.resources
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.Properties.Resources.resources
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.RoomForm.resources
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.csproj.GenerateResource.cache
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.csproj.CoreCompileInputs.cache
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.csproj.CopyComplete
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.exe
-C:\Users\Ярик\source\repos\Bookingcom-main\Bookingcom\obj\Debug\Bookingcom.pdb
